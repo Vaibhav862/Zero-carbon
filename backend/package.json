@@ -1,0 +1,40 @@
+{
+  "name": "zero-carbon-one-backend",
+  "version": "1.0.0",
+  "description": "Zero Carbon One - Utility Bill Extraction Backend",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "worker": "node src/workers/documentWorker.js"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "^0.0.55",
+    "@ai-sdk/google": "^0.0.55",
+    "@ai-sdk/openai": "^0.0.72",
+    "@anthropic-ai/sdk": "^0.52.0",
+    "@mastra/core": "^0.10.0",
+    "bcryptjs": "^2.4.3",
+    "bullmq": "^5.7.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.3.1",
+    "express-validator": "^7.1.0",
+    "helmet": "^7.1.0",
+    "ioredis": "^5.4.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "pdf-parse": "^1.1.1",
+    "sharp": "^0.33.4",
+    "tesseract.js": "^5.1.0",
+    "uuid": "^10.0.0",
+    "winston": "^3.13.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.3"
+  }
+}

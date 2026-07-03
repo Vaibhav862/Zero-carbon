@@ -1,0 +1,84 @@
+# Zero Carbon One - Git Ignore File
+# ==================================
+
+# Dependencies
+node_modules/
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build Outputs
+frontend/dist/
+frontend/.vite/
+
+# Uploads
+backend/uploads/
+!backend/uploads/.gitkeep
+
+# Logs
+backend/logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime Data
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage Directory
+coverage/
+
+# nyc Test Coverage
+.nyc_output/
+
+# Dependency Lock Files (optional, uncomment if needed)
+# package-lock.json
+# yarn.lock
+
+# Optional NPM Cache Directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# dotenv environment variable files
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Misc
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE & Editor Configurations
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary Files
+*.tmp
+*.temp
+.cache/
+
+# Docker
+.dockerignore
